@@ -1,33 +1,26 @@
-# EcoTrack 🌱
+# EcoTrack Sustainability Tracker
 
-**EcoTrack** is a modular and lightweight web application for tracking personal and organizational sustainability data. It enables users to register, log in, and enter daily environmental metrics such as electricity usage, carbon emissions, and recycling volumes.
+## Overview
+EcoTrack is a lightweight web application for tracking personal and organizational sustainability data. It allows users to register, log in, and record environmental metrics such as electricity usage, carbon emissions, and recycling data.
 
-This platform is especially tailored for individuals and small to medium-sized enterprises (SMEs) who seek an easy-to-use, installable sustainability tracker without relying on heavy enterprise software.
+## Project Goal
+The goal of this project is to provide a simple and accessible sustainability tracker for individuals and small to medium-sized organizations that want to monitor environmental performance without complex enterprise software.
 
----
-
-## ✨ Features
-
+## Features
 - User registration and secure login
-- Form-based input for:
-  - Electricity usage (kWh)
-  - Carbon emissions (kg)
-  - Recycling percentage or volume
+- Input forms for environmental metrics
 - Personalized dashboard
-- Responsive and accessible design
-- Simple local setup (no cloud deployment required)
-- Environment variable configuration for database credentials
+- Responsive interface
+- Local setup with environment variable configuration
 
----
+## Technologies Used
 
-## 🛠️ Technologies Used
-
-**Frontend**:
+### Frontend
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript
 
-**Backend**:
+### Backend
 - Node.js
 - Express.js
 - MongoDB
@@ -35,71 +28,19 @@ This platform is especially tailored for individuals and small to medium-sized e
 - bcryptjs
 - dotenv
 
----
+## Repository Structure
+- `frontend/` — frontend files
+- `routes/` — application routes
+- `models/` — database models
+- `config/` — configuration files
+- `server.js` — backend entry point
+- `package.json` — project dependencies and scripts
 
-## 🚀 Installation Instructions
+## Installation
+1. Clone the repository
+2. Run `npm install`
+3. Create a `.env` file with your MongoDB connection string and port
+4. Start the app with `npm start`
 
-### Prerequisites
-- [Node.js](https://nodejs.org/)
-- [MongoDB](https://www.mongodb.com/)
-- Git (optional for cloning)
-
-### Step-by-Step Guide
-
-1. **Download or Clone the Repository**
-   - Download ZIP from GitHub or run:
-     ```bash
-     git clone https://github.com/yourusername/ecotrack.git
-     cd ecotrack
-     ```
-
-2. **Install Dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Set up Environment Variables**
-   Create a `.env` file in the root directory with the following content:
-   ```env
-   MONGO_URI=your_mongodb_connection_string
-   PORT=3000
-   ```
-
-4. **Run the App Locally**
-   ```bash
-   npm start
-   ```
-
-5. **Access the App**
-   Open your browser and navigate to:
-   ```
-   http://localhost:3000
-   ```
-
----
-
-## 📁 Project Folder Structure
-
-```
-ecotrack/
-│
-├── models/             # Mongoose schemas
-├── routes/             # API routing (auth, data input)
-├── config/             # Database connection logic
-├── public/             # Frontend HTML/CSS/JS
-├── .env.example        # Example env file
-├── server.js           # Entry point
-├── package.json        # Dependency manager
-└── README.md
-```
-
----
-
-## 🔒 Security Note
-User passwords are hashed using bcryptjs and sensitive information is managed securely via environment variables using dotenv.
-
----
-
-## 🙌 Contact
-For any questions or suggestions, contact: yourname@example.com
-
+## Notes
+This project was completed as part of academic coursework and is presented here as a portfolio project demonstrating full-stack web development, backend structure, and user-centered application design.
